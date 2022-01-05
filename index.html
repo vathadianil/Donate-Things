@@ -5,27 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donate Things</title>
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
   </head>
   <body>
-    <div class="header">
-      <img class="logo" src="/images/logo.png" alt="Donate Things Logo" />
+    <div class="header-container">
+      <img class="logo" src="images/logo.png" alt="Donate Things Logo" />
       <div class="location-search">
         <input id="location-search-box" type="text" placeholder="" />
         <i id="location-search-icon" class="fas fa-search"></i>
         <div class="location-list">
           <select name="location-list" id="location-list-form">
-            <option value="India">
-              <i class="fas fa-map-marker-alt"></i> India
-            </option>
-            <option value="fas fa-map-marker-alt">&#xf3c5;Kerala</option>
-            <option value="Tamilnadu">
-              <i class="fas fa-map-marker-alt"></i> Tamilnadu
-            </option>
-            <option value="Punjab">
-              <i class="fas fa-map-marker-alt"></i> Punjab
-            </option>
+            <option value="India">India</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Tamilnadu">Tamilnadu</option>
+            <option value="Punjab">Punjab</option>
           </select>
         </div>
       </div>
@@ -45,6 +39,17 @@
       </div>
       <a class="login-tag" href="#">Login</a>
       <a class="donate-item" href="#"><i class="fas fa-plus"></i> Donate</a>
+    </div>
+    <div class="category-container">
+      <select name="" id="all-category">
+        <option value="ALL Categories">ALL CATEGORIES</option>
+      </select>
+      <a href="#">Computers</a>
+      <a href="#">Books</a>
+      <a href="#">Moblie Phones</a>
+      <a href="#">Laptop</a>
+      <a href="#">Clothes</a>
+      <a href="#">Vehicles</a>
     </div>
   </body>
 </html>
