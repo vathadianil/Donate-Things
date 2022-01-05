@@ -1,0 +1,100 @@
+* {
+  padding: 0px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #e3e7e7;
+}
+
+.logo {
+  width: 100px;
+  border-radius: 100px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#location-search-box {
+  line-height: 2rem;
+  border-color: orangered;
+  width: 15rem;
+  border-radius: 0.3em;
+}
+
+#item-search-box {
+  line-height: 2rem;
+  list-style: none;
+  border-color: orangered;
+  width: 30rem;
+  border-radius: 0.3em;
+}
+
+.location-search {
+  position: relative;
+}
+
+#location-search-icon {
+  position: absolute;
+  left: 2%;
+  top: 20%;
+}
+
+.location-list {
+  position: absolute;
+  left: 10%;
+  top: 0%;
+}
+
+#location-list-form {
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#location-list-form:focus,
+#location-list-form:hover {
+  outline: none;
+}
+
+.item-search {
+  background-color: orangered;
+  border-radius: 0.3em;
+}
+
+#item-search-box {
+  padding: 0;
+  margin: 0;
+}
+#item-search-icon {
+  margin-top: 0;
+  color: white;
+}
+
+#language-select-from {
+  border: none;
+  background-color: #e3e7e7;
+  color: orangered;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-tag {
+  color: orangered;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.donate-item {
+  font-weight: bold;
+  padding-right: 1em;
+  color: orangered;
+  text-decoration: none;
+  border: 0.2em solid orangered;
+  border-radius: 1em;
+}
