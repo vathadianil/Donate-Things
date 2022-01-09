@@ -9,39 +9,64 @@
     <link rel="stylesheet" href="css/all.min.css" />
   </head>
   <body>
-    <div class="header-container">
-      <img class="logo" src="images/logo.png" alt="Donate Things Logo" />
-      <div class="location-search">
-        <input id="location-search-box" type="text" placeholder="" />
-        <i id="location-search-icon" class="fas fa-search"></i>
-        <div class="location-list">
-          <select name="location-list" id="location-list-form">
-            <option value="India">India</option>
-            <option value="Kerala">Kerala</option>
-            <option value="Tamilnadu">Tamilnadu</option>
-            <option value="Punjab">Punjab</option>
-          </select>
+    <header class="main-header">
+      <div class="header-container">
+        <div class="logo-holder">
+          <a href="/"
+            ><img
+              class="main-image-logo"
+              src="images/logo.png"
+              alt="Donate Things Logo"
+          /></a>
+        </div>
+        <div class="location-item-search">
+        <div class="location-search-container">
+            <div class="wrapper">
+              <div class="search-input">
+                <input class="location-search-box" type="text" placeholder="Search Your Location" />
+                <div class="autocom-box"></div>
+                <div class="location-search-icon">
+                <button type="submit" class="location-search-icon-btn">
+                  <i class="fas fa-map-marker-alt"></i>
+                </button>
+              </div>
+              </div>
+            </div>
+        </div>
+        <div class="item-search-container">
+          <div class="item-search-box-container">
+          <input
+            type="text" class="item-search-box"
+            placeholder="Search for Things"
+          />
+        </div>
+          <div class="item-search-icon">
+          <button type="submit" class="item-search-icon-btn" >
+            <i  class="fas fa-search"></i>
+          </button>
+        </div>
         </div>
       </div>
-      <div class="item-search">
-        <input
-          id="item-search-box"
-          type="text"
-          placeholder="Search for Things"
-        />
-        <i id="item-search-icon" class="fas fa-search"></i>
+          <div class="language-selection">
+            <select name="language-selection" class="language-selection-list">
+              <option value="English">ENGLISH</option>
+              <option value="Hindi">HINDI</option>
+            </select>
+          </div>
+          <div class="login-donate-container">
+            <div class="login-container">
+          <a href="#">Login</a>
+        </div>
+        <div class="donate-container">
+          <a class="donate-item" href="#"><i class="fas fa-plus"></i> Donate</a>
+        </div>
+        </div>
+        </div>
       </div>
-      <div class="language-select-from">
-        <select name="language-selection" id="language-select-from">
-          <option value="English">ENGLISH</option>
-          <option value="Hindi">HINDI</option>
-        </select>
-      </div>
-      <a class="login-tag" href="#">Login</a>
-      <a class="donate-item" href="#"><i class="fas fa-plus"></i> Donate</a>
-    </div>
+    </header>
     <div class="category-container">
-      <select name="" id="all-category">
+      <div class="all-category-container">
+      <select name="" class="select-category">
         <option value="ALL Categories">ALL CATEGORIES</option>
       </select>
       <a href="#">Computers</a>
@@ -51,5 +76,43 @@
       <a href="#">Clothes</a>
       <a href="#">Vehicles</a>
     </div>
+  </div>
+  <div class="product-info-container">
+    <div class="product-header-container">
+    <h2>Latest Donations</h2>
+  <div class="product-container">
+    <div class="card-container">
+      <img src="images/laptop.jpg" alt="Denim Jeans" >
+      <h1>Laptop</h1>
+      <p class="price">Rs. 27000/-</p>
+      <p>Some text about the Laptop..</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card-container">
+      <img src="images/laptop.jpg" alt="Denim Jeans" >
+      <h1>Laptop</h1>
+      <p class="price">Rs. 27000/-</p>
+      <p>Some text about the Laptop..</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card-container">
+      <img src="images/laptop.jpg" alt="Denim Jeans" >
+      <h1>Laptop</h1>
+      <p class="price">Rs. 27000/-</p>
+      <p>Some text about the Laptop..</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="card-container">
+      <img src="images/laptop.jpg" alt="Denim Jeans" >
+      <h1>Laptop</h1>
+      <p class="price">Rs. 27000/-</p>
+      <p>Some text about the Laptop..</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+  </div>
+</div>
+<script src="js/location_names.js"></script>
+<script src="js/categories.js"></script>
   </body>
 </html>
