@@ -1,6 +1,5 @@
-let searchWrapper = document.querySelector(".search-input");
-let inputBox = searchWrapper.querySelector("input");
-let suggBox = searchWrapper.querySelector(".autocom-box");
+let inputBox = document.querySelector(".search-input");
+let suggBox = document.querySelector(".autocom-box");
 let suggestions = [
   "Andaman and Nicobar Islands",
   "Andhra Pradesh",
@@ -44,7 +43,6 @@ let suggestions = [
 inputBox.onkeyup = (e) => {
   let userData = e.target.value;
   let emptyArray = [];
-
   if (userData) {
     emptyArray = suggestions.filter((data) => {
       return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
@@ -52,8 +50,7 @@ inputBox.onkeyup = (e) => {
     emptyArray = emptyArray.map((data) => {
       return (data = "<li>" + data + "</li>");
     });
-    console.log(emptyArray);
-    searchWrapper.classList.add("active");
+    inputBox.classList.add("active");
   } else {
   }
   showSuggestion(emptyArray);
@@ -64,6 +61,7 @@ function showSuggestion(list) {
   if (list.length) {
     listData = list.join("");
   } else {
+    inputBox.classList.remove("active");
   }
   suggBox.innerHTML = listData ? listData : "";
 }
