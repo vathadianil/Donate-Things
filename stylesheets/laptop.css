@@ -305,12 +305,16 @@
   text-transform: uppercase;
   justify-content: space-between;
   color: rgb(255, 69, 0);
+  font-size: 18px;
   font-weight: bold;
-  line-height: 24px;
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  padding: 16px 0;
 }
 
-.brand-search-container {
-  padding: 16px 0;
+.brand-model-container.hide {
+  display: none;
 }
 
 .brand-input-container {
@@ -344,8 +348,7 @@ button.brand-search-btn {
   cursor: pointer;
 }
 
-.all-brands-header,
-.model-header {
+.heading {
   color: orangered;
   font-size: 14px;
   font-weight: bold;
@@ -358,16 +361,15 @@ button.brand-search-btn {
   padding: 5px 0;
 }
 
-.brand-checkbox-item span,
-.model-checkbox-item span {
+.checkbox-items span {
   font-size: 14px;
 }
 
-.brand-checkbox-item .checkbox-item,
-.model-checkbox-item .checkbox-item {
-  display: inline-flex;
+.checkbox-items {
+  display: flex;
   align-items: center;
   cursor: pointer;
+  padding: 5px;
 }
 
 .checkbox-item .checkbox-input {
@@ -379,7 +381,7 @@ button.brand-search-btn {
   width: 1.25em;
   border: 2px solid gray;
   border-radius: 3px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
@@ -397,8 +399,7 @@ button.brand-search-btn {
   border-color: rgba(255, 69, 0, 0.64);
 }
 
-.brand-checkbox-item input:hover,
-.model-checkbox-item input:hover {
+.checkbox-items input:hover {
   border: 10px solid #000;
 }
 

@@ -13,3 +13,19 @@ toggleBtn.addEventListener("click", () => {
     toggleBtnIcon.classList.add("fa-chevron-up");
   }
 });
+
+let toggleBtnForNav = document.querySelector("#brandModelHideShowBtn");
+let toggleBtnIconForNav = document.querySelector("#brandModelHideShowBtn i");
+let brandModelList = document.querySelector(".brand-model-container");
+
+toggleBtnForNav.addEventListener("click", () => {
+  if (brandModelList.classList.contains("hide")) {
+    brandModelList.classList.remove("hide");
+    toggleBtnIconForNav.classList.remove("fa-chevron-up");
+    toggleBtnIconForNav.classList.add("fa-chevron-down");
+  } else {
+    brandModelList.classList.add("hide");
+    toggleBtnIconForNav.classList.remove("fa-chevron-down");
+    toggleBtnIconForNav.classList.add("fa-chevron-up");
+  }
+});
