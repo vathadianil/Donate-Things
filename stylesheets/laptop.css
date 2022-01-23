@@ -292,7 +292,7 @@
   color: rgba(255, 69, 0, 0.64);
 }
 
-.brand-container,
+.model-container,
 .model-container {
   padding: 16px 0;
   border-bottom: 1px solid rgba(255, 69, 0, 0.64);
@@ -403,7 +403,6 @@ button.brand-search-btn {
   border: 10px solid #000;
 }
 
-.brand-checkbox-container,
 .model-checkbox-container {
   height: 160px;
   width: 100%;
